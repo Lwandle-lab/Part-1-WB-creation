@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines character encoding -->
+  <title>Contact - Urban Barista</title>
+  <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+</head>
+
+<!-- Page background styling -->
+<body>
+ <style>
+  body {
+    background-color: rgb(248, 247, 167);
+  }
+</style>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <a href="index.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="services.html">Products/Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="enquiry.html">Enquiry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </ul>
+  </nav>
+
+  <!-- Contact Information -->
+  <section class="contact-info">
+    <h1>Contact Us</h1>
+    <p><strong>Phone:</strong> +27 12 345 6789</p>
+    <p><strong>Email:</strong> info@urbanbarista.co.za</p>
+    <p><strong>Locations:</strong></p>
+    <ul>
+      <li>123 Coffee Street, Johannesburg</li>
+      <li>45 Bean Avenue, Cape Town</li>
+    </ul>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map">
+    <h2>Find Us</h2>
+    <!-- Example Google Maps for Johannesburg -->
+    <iframe src="https://www.google.com/maps/embed?...JohannesburgLocation..." 
+            width="400" height="300" style="border:0;" allowfullscreen></iframe>
+
+     <!-- Embedded Google Maps for Cape Town -->        
+    <iframe src="https://www.google.com/maps/embed?...CapeTownLocation..." 
+            width="400" height="300" style="border:0;" allowfullscreen></iframe>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <!-- Form sends data to submit_form.php using POST method -->
+    <form action="submit_form.php" method="post">
+
+      <!-- Name field -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+       <!-- Email field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- Message field -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+       <!-- Submit button -->
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language of the page to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Defines character encoding -->
+  <title>Enquiry - Urban Barista</title>
+  <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+</head>
+
+<!-- Page background styling -->
+<style>
+  body {
+    background-color: rgb(247, 209, 161);
+  }
+</style>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+       <!-- Each link goes to a different page of the site -->
+      <a href="index.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="services.html">Products/Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="enquiry.html">Enquiry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      
+    </ul>
+  </nav>
+
+  <!-- Enquiry Form -->
+  <section class="enquiry">
+     <!-- Heading for the form -->
+    <h1>Product/Service Enquiry</h1>
+
+    <form action="submit_enquiry.php" method="post">
+
+       <!-- Name field -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <!-- Email field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- Dropdown menu for enquiry type -->
+      <label for="enquiry-type">Enquiry Type:</label><br>
+      <select id="enquiry-type" name="enquiry-type" required>
+        <option value="product">Product Enquiry</option>
+        <option value="service">Service Enquiry</option>
+        <!-- Extra options for NPO version -->
+        <option value="volunteer">Volunteer Enquiry</option>
+        <option value="sponsor">Sponsor Enquiry</option>
+      </select><br><br>
+
+       <!-- Message text area -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+       <!-- Submit button -->
+      <button type="submit">Submit Enquiry</button>
+    </form>
+  </section>
+  </body>
+</html>
