@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">  <!-- Defines character encoding -->
+  <meta charset="UTF-8">
   <title>Services - Urban Barista</title>
-  <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file -->
 </head>
-
-<!-- Page background styling -->
-<style>
-  body {
-    background-color: rgb(190, 112, 10);
-  }
-</style>
-
 <body>
-  <!-- Navigation Menu -->
-  <nav>
-    <ul>
-      <!-- Each link goes to a different page of the site -->
-      <a href="index.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <!--The spaces created between the links. -->
-      <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="services.html">Products/Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="enquiry.html">Enquiry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
-      <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    </ul>
-  </nav>
+
+  <!-- Header -->
+  <!-- The opening of every page -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/CoffeeMug.JPG.jpg" width="30" height="30">
+        Urban<span>Barista</span>
+      </div>
+      <ul>
+        <a href="index.html">| Home | </a>
+        <a href="about.html"> About Us | </a>
+        <a href="services.html"> Products/Services | </a>
+        <a href="enquiry.html"> Enquiry | </a>
+        <a href="contact.html"> Contact | </a>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Services Section -->
-  <section class="services">
-    
-    <!-- Main heading -->
-    <h1 align="center">
-    <font face="Liber" align="center">Our Products & Services</font>
-    </h1>
+  <section class="services-section">
+    <h2>Our Products & Services</h2>
+    <p>At Urban Barista, we pride ourselves on offering high-quality coffee, refreshers, and freshly baked goods.</p>
 
-    <!-- Introductory text -->
-    <p align="center">At Urban Barista, we pride ourselves on offering high-quality coffee, refreshers and freshly baked goods.</p>
-    
-    <!--The Menu Created-->
-    <div style="text-align:center; margin:20px;">
-    <img src="images/Urban Barista Menu.jpg" style="width:25%; border-radius:5px;">
+   <!-- Food Gallery Section -->
+<section class="gallery">
+  <h2>Our Food Gallery</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/coffeemenu.jfif" alt="Vanilla Cappuccino">
+      <h3>Coffee</h3>
+    </div>
+    <div class="card">
+      <img src="images/Refreshments.jfif" alt="Refreshments">
+      <h3>Refreshments</h3>
+    </div>
+    <div class="card">
+      <img src="images/food photography.jfif" alt="Sweets">
+      <h3>Pastries</h3>
+    </div>
+    <div class="card">
+      <img src="images/Savory.jfif" alt="Savory">
+      <h3>Savory</h3>
+    </div>
+  </div>
+</section>
+ 
+    <!-- Menu -->
+    <!-- Services Grid -->
+    <div class="grid">
+      <div class="card">
+        <h3>Coffee Menu</h3>
+        <ul>
+          <li>Vanilla Bean Cappuccino – R25</li>
+          <li>Iced Vanilla Latte – R30</li>
+          <li>Caramel Hazelnut Latte – R35</li>
+          <li>Dark Chocolate Mocha – R32</li>
+          <li>Matcha Green Tea Latte – R28</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Juice and Refreshers</h3>
+        <ul>
+          <li>Fresh Orange Juice – R25</li>
+          <li>Strawberry Cream Frappe – R30</li>
+          <li>Mango Smoothie – R32</li>
+          <li>Lemon Juice Tea – R22</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Bakery</h3>
+        <ul>
+          <li>Croissants – R20</li>
+          <li>Muffins – R18</li>
+          <li>Apple Pie Slice – R25</li>
+          <li>Banana Bread – R28</li>
+          <li>Carrot Cake Slice – R28</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Wraps and Sandwiches</h3>
+        <ul>
+          <li>Chicken Caesar Wrap – R45</li>
+          <li>Chocolate Brownie – R40</li>
+          <li>Ham & Cheese Sandwich – R30</li>
+          <li>Veggies Delight Wrap – R40</li>
+          <li>Caprese Sandwich – R42</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Coffee Menu -->
-    <h2 >Coffee Menu</h2>
-    <ul>
-      <li>Vanilla Bean Cappuccino - R25</li>
-      <li>Iced Vanilla Latte - R30</li>
-      <li>Caramel Hazelnut Latte - R35</li>
-      <li>Dark Chocolate Mocha - R32</li>
-      <li>Matcha Green Tea Latte - R28</li>    
-    </ul>
-
-    <!-- Juice and Refreshers -->
-    <h2 >Juice and Refreshers</h2>
-    <ul>
-        <li>Fresh Orange Juice - R25</li>
-        <li>Strawberry Cream Frappe - R30
-        <li>Mango Smoothie - R32</li>
-        <li>Lemon Juice Tea - R22</li>
-        </li>
-    </ul>
-
-    <!-- Bakery Section -->
-    <h2>Bakery</h2>
-    <ul>
-      <li>Croissants - R20</li>
-      <li>Muffins - R18</li>
-      <li>Apple Pie Slice - R25</li>
-      <li>Banana Bread - R28</li>
-      <li>Carrot Cake Slice - R28</li>
-    </ul>
-
-     <!-- Wraps and Sandwiches -->
-    <h2> Wraps and Sandwiches</h2>
-    <ul>
-      <li>Chicken Ceasar Wrap - R45</li>
-      <li>Choolate Brownie - R40</li>
-      <li>Ham & Cheese Sandwich - R30</li>
-      <li>Veggies Delight Wrap - R40</li>
-      <li>Caprese Sandwich - R42</li>
-    </ul>
-
-     <!-- Additional Services -->
-    <h2 align="center">Additional Services</h2>
-    <p align="center">We also offer takeaway, delivery, and catering for events.</p>
+    <!-- Additional Services -->
+    <h3>Additional Services</h3>
+    <p>We also offer takeaway, delivery, and catering for events.</p>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Urban Barista. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+

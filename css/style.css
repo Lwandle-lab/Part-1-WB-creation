@@ -1,0 +1,358 @@
+/*========================================
+THE BASE OF ALL STYLES FOR EVERY SECTION
+==========================================*/
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ce9f49e8;
+}
+
+/*=================================
+FOR THE HEADER & NAVIGATOR
+===================================*/
+header {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0; width: 100%;
+  box-shadow: 0 4px 8px rgba(65, 49, 22, 0.767);
+}
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  width: 90%; margin: auto;
+}
+.logo { font-size: 28px; font-weight: 600; }
+.logo span { color: #ff9800; }
+nav ul { list-style: none; display: flex; 
+gap: 20px; transition: all 0.3s ease
+};
+
+nav ul { margin: 0 20px; }
+nav ul a {
+  color: #fff; text-decoration: none; font-weight: 500;
+}
+nav ul a:hover { color: #ff9800; }
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/*------Hover underline animation------*/
+nav ul a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ff9800;
+  transition: width 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #ff9800;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+/*------Mobile menu toggle------*/
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/*------Dropdown animation------*/
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #3e2723;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    animation: slideDown 0.5s ease forwards;
+  }
+  nav ul.active { display: flex; }
+}
+
+/*======================
+    THE HERO SECTION
+========================*/
+.hero-section {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 120px 10% 80px;
+  background: url('images/coffee-bg.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+}
+.hero-details .title { 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8rem;
+  color: #3d2b0bda;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.hero-details .title {
+  animation: fadeInDown 1.5s ease forwards;
+}
+
+.hero-details .subtitle { font-size: 4rem; color: #8b5f1c; margin: 10px 0; }
+.hero-details .description { font-size: 2rem; color: #dac96e; margin-bottom: 20px; }
+.hero-details .button {
+  font-size:2rem; background: #ff9800; color: #2b2301; padding: 12px 25px;
+  border-radius: 4px; text-decoration: none;
+}
+.hero-details .button:hover { background: #fff; color: #3e2723; }
+
+
+/*================================
+SERVICES & ABOUT (GRIP + CARDS)
+==================================*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #c4ae4d; border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px; text-align: center;
+}
+.card img { width: 100%; border-radius: 8px; }
+.card h3 { margin: 15px 0; font-size: 20px; color: #3e2723; }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+
+/*=========================
+THE STYLES FOR ABOUT PAGE
+===========================*/
+.about-heading {
+  text-align: center;
+  background-color: #ce9f49e8;
+  padding: 20px 0 20px;
+}
+
+.about-heading h2 {
+  text-align: center;  
+  font-size: 2.5rem;
+  color: #e7ca47;
+  letter-spacing: 1px;
+}
+
+.about-section,
+.about-heading {
+  padding-top: 110px; /*Adjust if needed to*/
+}
+
+h1, h2 {
+  margin-top: 110px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  display: block;
+  animation: bounce 3s infinite;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  animation: bounce 1s;
+}
+
+/*==========================
+Style in Gallery FOR MENU
+============================*/
+.gallery {
+  padding: 60px 10%;
+  background-color: #c0ab65;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #3e2723;
+  margin-bottom: 30px;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery .card {
+  background: #c4a244;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery .card h3 {
+  padding: 15px;
+  font-size: 18px;
+  color: #3e2723;
+}
+
+.gallery .card:hover {
+  transform: scale(1.05);
+}
+
+/*==============================
+FOR FORMS (CONTACT AND ENQUIRY)
+================================*/
+
+form { max-width: 500px; margin: 0 auto; text-align: left; }
+form label { display: block; margin-bottom: 5px; font-weight: 500; color: #3e2723; }
+form input, form textarea {
+  width: 100%; padding: 10px; margin-bottom: 15px;
+  border: 1px solid #ccc; border-radius: 4px;
+}
+form button {
+  background-color: #3e2723; color: #f0db64; border: none;
+  padding: 10px 20px; border-radius: 4px; cursor: pointer;
+}
+form button:hover { background-color: #ff9800; }
+
+.contact-section {
+  animation: fadeUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+.contact-form {
+  animation: zoomIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+
+/*=========================
+THE FOOTER ON EVERY PAGE
+===========================*/
+footer {
+  background-color: #3e2723; color: #fff;
+  text-align: center; padding: 20px; font-size: 14px;
+}
+
+
+/*======================
+THE RESPONSIVE DESIGN
+=========================*/
+@media (max-width: 1024px) {
+  .hero-section { flex-direction: column; text-align: center; }
+}
+@media (max-width: 768px) {
+  nav ul { display: none; }
+  nav ul.active { display: block; flex-direction: column; text-align: center; }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+  h1, h2 { font-size: 24px; }
+}
+
+/*The bounce keyframes*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*----The slide‑down animation----- */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

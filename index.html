@@ -1,61 +1,60 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Sets the language of the page to English -->
+<html lang="en">
 <head>
-        <meta charset="UTF-8"> <!-- Defines character encoding -->
-        <title> URBAN BARISTA</title>
-        <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+  <meta charset="UTF-8">
+  <title>Urban Barista</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file -->
 </head>
-<body style="margin:0; font-family:Arial, sans-serif; background-color:#4b3832; color:white;">
-     <br/>
+<body>
 
-      <!-- Logo image at the top left -->
-      <img src="images/CoffeeMug.JPG.jpg" align="left" width="80" height="80">
-  
-     <!-- Navigarion Menu -->  
+  <!-- Header -->
+  <!-- The opening of every page -->
+  <header>
     <nav>
-        <ul>
-         <!-- Each link styled with white text, no underline, and spacing -->  
-        <a href="index.html" style="color:white; text-decoration:none; margin:0 15px;">Home Page</a>
-        <a href="about.html" style="color:white; text-decoration:none; margin:0 15px;">About Us</a>
-        <a href="services.html" style="color:white; text-decoration:none; margin:0 15px;">Products/Services</a>
-        <a href="enquiry.html" style="color:white; text-decoration:none; margin:0 15px;">Enquiry</a>
-        <a href="contact.html" style="color:white; text-decoration:none; margin:0 15px;">Contact</a>
-        </ul>
-    </nav>
-    
-    <!-- Hero Section (main banner area)-->
-      <header style="display:flex; align-items:center; justify-content:space-between; padding:50px; background-color:#4b3832;">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/CoffeeMug.JPG.jpg"  width="60" height="60">
+        Urban<span>Barista</span>
+      </div>
+
+      <!-- Hamburger icon for mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+         <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Menu -->
+    <nav>
       <ul>
-          <!-- Main heading -->
-      <h1> 
-        <font face="Liber" color="yellow"; size="48px">URBAN BARISTA</font>
-      </h1>
-          <!-- Banner image -->
-      <img src="images/Cafe girl.png" alt="Cafe girl" style="width:100%; max-width:1200px; border-radius:10px;">
-      
-       <!-- Tagline text -->
-      <p>
-        <font face="Narnia" size="8" color="yellow">
-        Welcome to our coffee paradise, that offers more than just brewing dreams.
-        </font>
-      </p>
+        <a href="index.html"> Home | </a>
+        <a href="about.html"> About Us |  </a>
+        <a href="services.html"> Products/Services |  </a>
+        <a href="enquiry.html"> Enquiry |  </a>
+        <a href="contact.html"> Contact  </a>
+      </ul>
+    </nav>
+  </header>
 
-      <p>
-        <font face="Narnia" size="6" color="yellow">
-        Savor the Aroma, Sip the Splendor.
-        </font>
-      </p>
-     
-      <!-- Buttons Section (to make it easier for the user to use/navigate)-->
-       <div>
-        <ul>
-         <a href="services.html" style="display:inline-block; background-color:oklab(63.438% 0.09908 0.11914); color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin:10px;">What we offer</a>
-         <a href="contact.html" style="display:inline-block; background-color:#8b4513; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin:10px;">Contact Us</a>
-        </ul> 
-       </div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-details">
+      <h2 class="title">URBAN BARISTA</h2>
+      <h3 class="subtitle">Welcome to our coffee paradise</h3>
+      <p class="description">We offer more than just brewing dreams. Savor the aroma, sip the splendor.</p>
+      <a href="services.html" class="button">What we offer</a>
+      <a href="contact.html" class="button">Contact Us</a>
+    </div>
+    <div class="hero-image-wrapper">
+      <img src="images/Coffeesplash.png" alt="Cafe girl" class="hero-image">
+    </div>
+  </section>
 
-
-    </header>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Urban Barista. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
 

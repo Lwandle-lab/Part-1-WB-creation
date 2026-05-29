@@ -3,31 +3,30 @@
 <head>
   <meta charset="UTF-8"> <!-- Defines character encoding -->
   <title>Contact - Urban Barista</title>
-  <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file -->
 </head>
-
-<!-- Page background styling -->
-<body>
- <style>
-  body {
-    background-color: rgb(248, 247, 167);
-  }
-</style>
 <body>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <ul>
-      <a href="index.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="services.html">Products/Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="enquiry.html">Enquiry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    </ul>
-  </nav>
+  <!-- Header -->
+  <!-- The opening of every page -->
+   <header>
+    <nav>
+      <div class="logo">
+        <img src="images/CoffeeMug.JPG.jpg"  width="30" height="30">
+        Urban<span>Barista</span>
+      </div>
+      <ul>
+        <a href="index.html">| Home | </a>
+        <a href="about.html"> About Us | </a>
+        <a href="services.html"> Products/Services | </a>
+        <a href="enquiry.html"> Enquiry | </a>
+        <a href="contact.html"> Contact | </a>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Contact Information -->
-  <section class="contact-info">
+  <section class="contact-section">
     <h1>Contact Us</h1>
     <p><strong>Phone:</strong> +27 12 345 6789</p>
     <p><strong>Email:</strong> info@urbanbarista.co.za</p>
@@ -52,9 +51,14 @@
 
   <!-- Contact Form Section -->
   <section class="contact-form">
-    <h2>Send Us a Message</h2>
+    <h2 align="center">Send Us a Message</h2>
     <!-- Form sends data to submit_form.php using POST method -->
     <form action="submit_form.php" method="post">
+
+      <!-- Making it known that the customers are seen, by including an opening -->
+      <p>We care about the feedback of our customers.
+        By sending us a message we'll be updated with any concerns, bad or good!
+      </p>
 
       <!-- Name field -->
       <label for="name">Name:</label><br>
@@ -72,5 +76,10 @@
       <button type="submit">Send</button>
     </form>
   </section>
+
+  <!-- FOOTER -->
+   <footer>
+    <p>&copy; 2026 Urban Barista. All rights reserved.</p>
+  </footer>
 </body>
 </html>

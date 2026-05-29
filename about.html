@@ -1,63 +1,61 @@
 <!DOCTYPE html>
+<html lang ="en">
 <head>
     <meta charset="UTF-8"> <!-- Defines character encoding -->
     <title> About Us - Urban Barista</title>
-    <link rel="stylesheet" href="style.css"> <!-- Links to external CSS file -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file -->
 </head>
-
-<!-- Page background styling -->
-<style>
-body {
-  background-color: rgb(248, 236, 181);
-}
-</style>
-
 <body>
-   <!-- Logo image at the top left --
- <img src="images/CoffeeMug.JPG.jpg" align="left" width="60" height="60"> 
-   
- <!-- Navigation Menu-->
-     <nav>
-    <ul>
+
+  <!-- The opening of every page -->
+  <header>
+    <nav>
+      <div class ="logo">
+        <img src="images/CoffeeMug.JPG.jpg"  width="30" height="30">
+        Urban<span>Barista</span>
+      </div>
+      <ul>
       <!-- Each link goes to a different page of the site -->
-      <a href="index.html">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="services.html">Products/Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="enquiry.html">Enquiry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="index.html">| Home | </a>
+      <a href="about.html"> About Us | </a> 
+      <a href="services.html"> Products/Services | </a>
+      <a href="enquiry.html"> Enquiry | </a>
+      <a href="contact.html"> Contact | </a> 
     </ul>
-  </nav>
+    </nav>
+  </header>
 
   <!-- About Us Selection-->
-   <section class="about">
+   <section class="about-heading">
+  <!-- Main heading -->
+    <h1>About Us</h1>
+   </section>
 
-      <!-- Main heading -->
-    <h1 text align="center">About Us</h1>
+ <!-- Paragraph describing company history and mission -->
+    <h2 align="center">Everything you need to know</h2>  
+     <p align="center">
+      Urban Barista was founded back by Lwandle Makhaza in 2020.</br>
+      The exciting feeling of bringing everyone together, where every moment is created through comfort and coziness.</br>
+      What would have been a better way to attract more and more people all over the world.</br>
+      In 2024 we decided officially launch our website to grow further.</br> 
+      With a passion for coffee and community, today Urban Barista is what it is because of our customers.</br>
 
-    <!-- Decorative underline below heading-->
-      <hr style="width: 120px; height:3px; background-color:orange; border:none; margin:auto;">
-
-    <h1 align="center">Everything you need to know:</h1>  
-
-      <!-- Paragraph describing company history and mission -->
+      <h2 align="center"> Our Goals</h2>
       <p align="center">
-        Urban Barista was founded back in 2020 with a passion for coffee and community.</br>
-        Just then it was a place where locals were able to visit. Later on in 2024 we decided to grow more
-        and that was a year we officially launched our website.</br> 
-        The mission is to serve high-quality, ethically
-        sourced products and services, while creating a welcoming space for everyone.</br>
-        The vision was bigger than ever, being the go-to cafe that inspres connection and sustainability in 
-        our community.
-      </p>
+      Our mission is to serve high-quality, ethically sourced products and services.</br>
+      Creating a welcoming space for everyone.</br>
+      Our vision is to be the go-to cafe that inspires connection and sustainability in our community.</br>
+      </p> 
 
-      <!--The Team Section-->
+    <!--The Team Section-->
    <div style="text-align:center; margin:20px;">
+   <h1> Our Team </h1> 
 
   <!-- Person 1 -->
   <div style="display:inline-block; margin:15px;">
   <img src="images/CafeManager.jpg" alt="Team Member 1" 
        style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin:10px;">
-      <p style="font-family:Georgia; font-size:16px">Bianca: Cafe Manager</p> 
+      <p style="font-family:Georgia; font-size:16px">Bianca: Cafe Manager & Owner</p> 
   </div>
 
   <!-- Person 2 -->
@@ -76,10 +74,16 @@ body {
  
 <!-- Person 4 -->
 <div style="display:inline-block; margin:15px;">
-   <img src="images/Customer Experience.jpg" alt="Team Member 3" 
+   <img src="images/Customer Experience.jpg" alt="Team Member 4" 
        style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin:10px;">
       <p style="font-family:Georgia; font-size:16px;">Noah: Customer Experience</p>
    </div>
   </div> 
+</section>
+
+  <!--THE FOOTER-->
+  <footer>
+    <p>&copy; 2026 Urban Barista. All rights reserved.</p>
+  </footer>
  </body> 
 </html>
